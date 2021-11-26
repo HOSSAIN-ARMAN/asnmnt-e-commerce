@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Complete Bootstrap 4 Website Layout</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+   
+
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">product</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Service</a>
+                </li>
+               
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="btn btn-outline-secondary"><i class="fas fa-shopping-cart"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="container-fluid padding">
+        <div class="row align-items-center text-center">
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 small-img-row ">
+                <div class="small-card-img">
+                    <img class="card-img-top small-img" src="" id="img-1">
+                </div>
+                <div class="small-card-img ">
+                    <img class="card-img-top small-img" src="" id="img-2">
+                </div>
+                <div class="small-card-img">
+                    <img class="card-img-top small-img" src="" id="img-3">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="" id="product-img">
+                </div>
+            </div>
+    
+            <!-- <img src="" id="img-1"> -->
+    
+    
+            <!-- <div class="col-md-3 small-img-row">
+                <div class="small-card-img">
+                    <img class="card-img-top small-img" src="img/shirt/s1.jpg">
+                </div>
+                <div class="small-card-img ">
+                    <img class="card-img-top small-img" src="img/shirt/s2.jpg">
+                </div>
+                <div class="small-card-img">
+                    <img class="card-img-top small-img" src="img/shirt/s3.jpg">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img class="card-img-top" src="img/shirt/s1.jpg" id="product-img">
+                </div>
+            </div> -->
+    
+    
+            <div class="col-md-3">
+                <p> product short description</p>
+                <h4>Poduct name</h4>
+                <h6 id="price">Price 1200 TK</h6>
+                <select>
+                    <option>Select Size</option>
+                    <option>XXL</option>
+                    <option>XL</option>
+                    <option>M</option>
+                    <option>S</option>
+                </select>
+                <br>
+                <br>
+                <a href="#" class="btn btn-outline-secondary">Buy now</a>
+            </div>
+        </div>
+        <div class="row align-items-center text-center">
+            <div class="col-md-12" style="border: 2px solid;">
+                <p>Product Long Long Description</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!--- Footer -->
+<footer>
+    <div class="container-fluid padding">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <hr class="light"/>
+                <h1>Footer Text</h1>
+                <hr class="light">
+                <p>text</p>
+                <p>text</p>
+                <p>text</p>
+                <p>text</p>
+            </div>
+            <div class="col-md-4">
+                <hr class="light"/>
+                <h1>Footer Text</h1>
+                <hr class="light">
+                <p>text</p>
+                <p>text</p>
+                <p>text</p>
+                <p>text</p>
+            </div>
+            <div class="col-md-4">
+                <hr class="light"/>
+                <h1>Footer Text</h1>
+                <hr class="light">
+                <p>text</p>
+                <p>text</p>
+                <p>text</p>
+                <p>text</p>
+            </div>
+            <div class="col-12">
+                <hr class="light">
+                <h5>&copy; Arman Hossain</h5>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+  
+<script>
+//     document.getElementById("small-img").onclick = function () {
+//   alert("Hello WOrld");
+// }
+
+"use strict"
+
+  var productImg = document.getElementById("product-img");
+  var smallImg = document.getElementsByClassName("small-img");
+
+//   for(var i = 0; i<3; i++){
+//     smallImg[i].onclick = function(){
+//     productImg.src = smallImg[i].src;
+//     }
+//   }
+
+  smallImg[0].onclick = function(){
+    productImg.src = smallImg[0].src;
+  }
+
+  smallImg[1].onclick = function(){
+    productImg.src = smallImg[1].src;
+  }
+
+  smallImg[2].onclick = function(){
+    productImg.src = smallImg[2].src;
+  }
+
+
+
+  var details = JSON.parse(sessionStorage.getItem("details"));
+  
+//   alert(details.imgOne);
+
+  document.getElementById("product-img").src = details.imgOne;
+  document.getElementById("img-1").src = details.imgOne;
+  document.getElementById("img-2").src = details.imgTwo;
+  document.getElementById("img-3").src = details.imgThree;
+
+  document.getElementById("price").innerHTML = details.price;
+
+  localStorage.removeItem("details");
+
+</script>
+
+
+</body>
+</html>
